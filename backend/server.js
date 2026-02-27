@@ -22,7 +22,7 @@ app.use("/api", studentRoutes);
 app.use(express.static(path.join(__dirname, "../frontend2/frontend/build")));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend3/frontend/build", "index.html"));
+  res.sendFile(path.join(__dirname, "../frontend2/frontend/build", "index.html"));
 });
 
 // Server
